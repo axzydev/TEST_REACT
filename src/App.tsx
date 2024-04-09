@@ -8,7 +8,8 @@ const App = () => {
 
   return (
     <>
-      <Button label="Dame un click" onClick={handleClick}  />
+      {/* Aqui estamos llamando al componente Button y le estamos pasando el label y el evento onClick */}
+      <Button label="Dame un click" buttonClick={handleClick} />
     </>
   );
 };

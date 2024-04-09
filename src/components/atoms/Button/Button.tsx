@@ -2,9 +2,10 @@ import { ButtonProps } from "./Button.types";
 import React from "react";
 
 export const Button: React.FC<ButtonProps> = ({
+  //aqui recibimos los parametros que se le pasan al componente padre
   label,
-  onClick,
-  //aqui estamos definiendo que el color es opcional y si no se le pasa nada por defecto sera primary
+  buttonClick,
+  //aqui estamos definiendo que si el color no se le pasa por parametro sera primary
   color = "primary",
 }) => {
   return (
@@ -14,7 +15,7 @@ export const Button: React.FC<ButtonProps> = ({
         color === "primary" ? "bg-blue-500" : "bg-red-500"
       }`}
       //aqui estamos definiendo que el evento onClick sera el que se le pase por parametro
-      onClick={onClick}
+      onClick={buttonClick}
     >
       {label}
     </button>
