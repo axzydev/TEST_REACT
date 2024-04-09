@@ -19,3 +19,22 @@ yarn add -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
+# GIT HUB COMMANDS
+1) Agregar los cambios
+```
+git add .
+```
+2) Agregar commit
+```
+git commit -m "comentario sobre los cambios"
+```
+3) Subir los cambios a la rama
+```
+git push -u origin nombre_de_la_rama 
+```
+4) Como nota
+    - se deben de manejar ramas y no subir directamente los cambios a main
+    - para crear una rama nueva se hace esto
+```
+git checkout -b nombre_de_la_rama
+```

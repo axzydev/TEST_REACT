@@ -1,12 +1,16 @@
-import './App.css'
+import "./App.css";
+import { Button } from "./components/atoms/Button/Button";
 
-function App() {
+const App = () => {
+  const handleClick = () => {
+    console.log("Click");
+  };
 
   return (
     <>
-     Hola mundo
+      <Button label="Dame un click" onClick={handleClick}  />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
